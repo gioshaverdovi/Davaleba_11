@@ -77,4 +77,7 @@
 	.socli:after {
 		display: none;
 	}
+	.burgerbar {
+		display: none;
+	}
 }
