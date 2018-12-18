@@ -68,4 +68,13 @@
 	.ul {
 		flex-direction: column;
 	}
+	.li, .socli {
+		margin-bottom: 20px;
+	}
+	.socul {
+		flex-direction: column;
+	}
+	.socli:after {
+		display: none;
+	}
 }
