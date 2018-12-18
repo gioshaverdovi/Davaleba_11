@@ -1,8 +1,6 @@
 .container {
 	width: 1170px;
 	margin: 0 auto;
-
-
 }
 .header {
 	padding: 20px 0;
@@ -10,6 +8,7 @@
 	width: 100%;
 	position: fixed;
 	z-index: 999999;
+	display: flex;
 }
 .logo {
 	width: 198px;
@@ -23,14 +22,82 @@
 	display: flex;
 }
 .li {
-	margin-right: 10px;
+	margin-right: 20px;
 	font-size: 24px;
+	transition-property: all;
+	transition-duration: 0.3s;
+}
+.li:hover {
+	background-color: #ff8fa9;
+	transform: scale(1.2);
 }
 .li:last-child {
 		margin-right: 0;
 }
 .li a {
 	color: #3D58A6;
+}
+.socul {
+	display: flex;
+	justify-content: space-between;
+}
+.fa-google-plus {
+	font-size: 20px;
+	color: #3D58A6;
+	transition-duration: 0.3s;
+}
+.socli:hover .fa-google-plus {
+	color: red;
+	transform: scale(1.3);
+}
+.fa-facebook {
+	font-size: 20px;
+	color: #3D58A6;
+	transition-duration: 0.3s;
+}
+.socli:hover .fa-facebook {
+	color: red;
+	transform: scale(1.3);
+}
+.fa-youtube {
+	font-size: 20px;
+	color: #3D58A6;
+	transition-duration: 0.3s;
+}
+.socli:hover .fa-youtube {
+	color: red;
+	transform: scale(1.3);
+}
+.fa-search {
+	font-size: 20px;
+	color: red;
+	transition-property: all;
+	transition-duration: 0.3s;
+}
+.socli:hover .fa-search {
+	transform: scale(1.3) rotate(360deg);
+}
+.burgerbar {
+	font-size: 20px;
+	display: none;
+}
+.socli::after {
+	content: "";
+	width: 2px;
+	height: 20px;
+	background-color: #3D58A6;
+	display: inline-block;
+	margin: 0 15px;
+}
+.socli:last-child::after {
+	display: none;
+}
+.socli:nth-child(4)::after {
+	display: none;
+}
+.section1 {
+	background-color: #EE4036;
+	padding: 30px 0;
 }
 .sectionbanner {
 	background: #E6E6E6;
@@ -45,6 +112,13 @@
 	margin-top: 100px;
 	position: relative;
 	z-index: 0;
+}
+.arrow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px;
+	margin-top: 200px;
 }
 .bannertext {
 	position: absolute;
@@ -83,6 +157,11 @@
 	display: flex; 
 	justify-content: center;
 	align-items: center;
+	transition-property: all;
+	transition-duration: 0.3s;
+}
+.box:hover {
+	border: 5px solid red;
 }
 .boxtitle {
 	font-size: 24px;
@@ -101,7 +180,6 @@
 .wraper4 {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
 }
 .sec4title {
 	font-size: 24px;
@@ -127,6 +205,7 @@
 }
 .box2 {
 	width: 1170px;
+	margin: 0 0 30px 0;
 }
 .sec5title {
 	font-size: 22px;
@@ -135,14 +214,24 @@
 .wraper5 {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
-}
-.box2 {
-	margin: 0 0 30px 0;
 }
 .sec5box {
 	width: 570px;
 	background-color: #fff;
+	border: 5px solid white;
+	transition-property: all;
+	transition-duration: 0.3s;
+}
+.sec5box:hover {
+	border: 5px solid red;
+}
+.sec5box:hover .qvesatauri {
+	display: inline-block;
+	color: red;
+	background-color: #ff8fa9;
+}
+.sec5box:hover .more {
+	color: red;
 }
 .sec5title {
 	font-size: 24px;
